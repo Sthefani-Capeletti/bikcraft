@@ -1,0 +1,118 @@
+.bicicletas-bg {
+  /* box-shadow inset não funciona aqui */
+  background: linear-gradient(
+    to right,
+    var(--cor-0) 0%,
+    var(--cor-0) 30%,
+    var(--cor-11) 30%,
+    var(--cor-11) 100%
+  );
+}
+
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.bicicletas-imagem {
+  /* position: relative; */
+  display: grid;
+}
+
+.bicicletas-imagem img {
+  grid-area: 1/1;
+}
+
+.bicicletas-imagem span {
+  background-color: var(--cor-12);
+  padding: 8px 16px;
+  display: inline-block;
+  grid-area: 1/1; /* 1 linha, 1 coluna*/
+  place-self: start end;
+  margin-top: 20px;
+  border-radius: 4px 0 0 4px; /* canto 1, canto 2, canto 3, canto 4
+
+  /* position: absolute;
+  top: 20px;
+  right: 0px; */
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start; /* Solucionar espaçamento maior entre as linhas do grid para tentar preencher o espaço criado pelo crescimento da img*/
+}
+
+.bicicletas h2,
+.bicicletas p {
+  grid-column: 1/-1;
+}
+
+.bicicletas h2 {
+  margin-bottom: 20px;
+}
+
+.bicicletas h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.bicicletas p {
+  margin-bottom: 32px;
+}
+
+.bicicletas a {
+  place-self: end;
+}
+
+.bicicletas ul {
+  display: grid;
+  gap: 16px;
+}
+
+.bicicletas li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* .bicicletas li + li {
+  margin-top: 16px;
+} */
+
+.bicicletas-conteudo img {
+  width: 24px;
+}
+
+@media (max-width: 800px) {
+  .bicicletas {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas ul {
+    margin-bottom: 32px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
+  }
+  .bicicletas a {
+    place-self: start;
+  }
+}
