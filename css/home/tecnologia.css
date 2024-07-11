@@ -31,6 +31,7 @@
 }
 
 .tecnologia-conteudo > p {
+  /* p filho direto */
   margin-bottom: 20px;
 }
 
@@ -45,7 +46,7 @@
 
 .tecnologia-vantagens h3 {
   margin-bottom: 8px;
-  width: max-content;
+  width: max-content; /* width será o tamanho maximo dele, não irá quebrar*/
 }
 .tecnologia-vantagens img {
   width: 24px;

@@ -39,6 +39,7 @@
 }
 
 .seguros-item li + li {
+  /* li que tem um li antes */
   margin-top: 20px;
 }
 .seguros-item li {
