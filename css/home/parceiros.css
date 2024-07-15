@@ -21,12 +21,6 @@
   border-left: 2px solid var(--cor-2);
 }
 
-.parceiros li {
-  padding: 32px;
-  display: flex;
-  border-left: 2px solid var(--cor-2);
-}
-
 .parceiros li:first-child,
 .parceiros li:nth-child(5) {
   border: 0;
