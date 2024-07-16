@@ -28,6 +28,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto; /* Resolve a parte de imagens distorcidas quando definimos valores de height e width direto na tag*/
 }
 
 img[src$=".jpg"] {

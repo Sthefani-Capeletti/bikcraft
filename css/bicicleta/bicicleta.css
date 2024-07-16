@@ -23,7 +23,6 @@
 }
 
 .bicicleta-imagens img:first-child {
-  flex: 1;
   min-width: 100%;
 }
 
@@ -74,10 +73,6 @@
 
 .bicicleta-informacoes img {
   width: 24px;
-  margin-bottom: 8px;
-}
-
-.bicicleta-informacoes {
   margin-bottom: 8px;
 }
 
